@@ -1,0 +1,8 @@
+{
+  "key": "demo-sale-001",
+  "memo": "Synthetic customer payment",
+  "entries": [
+    {"account": "assets:cash", "amount": 125000, "currency": "USD"},
+    {"account": "income:services", "amount": -125000, "currency": "USD"}
+  ]
+}

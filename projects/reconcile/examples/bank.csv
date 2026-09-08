@@ -1,0 +1,6 @@
+id,date,amount,currency,description
+B001,2026-01-02,1250.00,USD,Invoice 1042
+B002,2026-01-04,-39.00,USD,Hosting
+B003,2026-01-05,500.00,USD,Transfer A
+B004,2026-01-05,500.00,USD,Transfer B
+B005,2026-01-08,-12.50,USD,Bank charge

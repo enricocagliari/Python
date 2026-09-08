@@ -1,0 +1,5 @@
+id,date,amount,currency,description
+L001,2026-01-01,1250.00,USD,Customer receipt
+L002,2026-01-04,-39.00,USD,Server expense
+L003,2026-01-05,500.00,USD,Unidentified transfer
+L004,2026-01-10,90.00,USD,Outstanding deposit
