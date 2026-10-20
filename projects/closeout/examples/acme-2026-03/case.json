@@ -1,0 +1,27 @@
+{
+  "entity": "Acme Studio LLC",
+  "period_start": "2026-03-01",
+  "period_end": "2026-03-31",
+  "cash_account": "1010 Cash",
+  "bank_opening_balance": 2500000,
+  "book_opening_balance": 2500000,
+  "accounts": {
+    "bank_charges": "6900 Bank charges",
+    "interest_income": "7100 Interest income",
+    "suspense": "9999 Suspense"
+  },
+  "sales_tax": {
+    "rate": 0.08,
+    "sales_account": "4000 Sales",
+    "payable_account": "2200 Sales tax payable",
+    "tolerance_cents": 100
+  },
+  "expected": [
+    {"category": "bank_fee", "ids": ["B006"]},
+    {"category": "interest", "ids": ["B007"]},
+    {"category": "duplicate", "ids": ["L016"]},
+    {"category": "timing", "ids": ["L023"]},
+    {"category": "duplicate", "ids": ["L013", "L015"]},
+    {"category": "duplicate", "ids": ["L014", "L016"]}
+  ]
+}

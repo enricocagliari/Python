@@ -2,9 +2,9 @@
 
 ## 01 · Standard library first
 
-The three projects have no third-party runtime dependencies. Their interesting behavior is in matching rules, transaction boundaries, and filesystem handling. Keeping dependency setup out of the quick start makes those behaviors easier to inspect.
+The core of every project has no third-party runtime dependencies. Their interesting behavior is in matching rules, transaction boundaries, and filesystem handling. Keeping dependency setup out of the quick start makes those behaviors easier to inspect.
 
-Trade-off: CLI interfaces are basic and there is no web UI. If a UI is added, keep it separate from the tested core.
+Trade-off: CLI interfaces are basic and there is no web UI. If a UI is added, keep it separate from the tested core. Closeout's Claude provider is the one optional dependency; it is imported only when selected, so the test suite and the default demo stay offline.
 
 ## 02 · Exact representations for money
 
@@ -35,3 +35,15 @@ Trade-off: a balance calculation aggregates history. Materialized balance tables
 FileProof records relative paths, byte counts, and content hashes. Absolute paths and timestamps are omitted.
 
 Trade-off: this is content comparison, not preservation of permissions, empty directories, or ownership. A trusted manifest must be stored separately; hashing alone does not establish authenticity.
+
+## 07 · The model classifies, the engine computes
+
+Closeout's engine reconciles, runs integrity checks, and produces candidates with source citations. The LLM receives those candidates, may read other records through two lookup tools, and returns one classification per candidate through a strict-schema tool. Amounts, record IDs, and balances in the workpaper come from the engine. Any candidate the model skips or mislabels is escalated, never dropped.
+
+Trade-off: the model cannot raise an exception the engine did not detect. That is deliberate; a new check is a code change with a test, not a prompt change.
+
+## 08 · Evaluate the whole system, not the prompt
+
+Labels describe the exceptions an accountant would raise. A candidate with no label must be classified as no exception, so false positives are measured, and a label with no candidate is counted against the engine. Time and token cost are recorded per case alongside accuracy.
+
+Trade-off: synthetic cases encode the author's assumptions about what is routine. The generator's injection types are the ceiling of what the evaluation can detect, and the model-provider results are not checked in because they cost money and drift across model versions.

@@ -1,0 +1,24 @@
+id,journal,date,account,amount,currency,description
+L001,J001,2026-03-02,1200 Receivables,1080.00,USD,Invoice Harbor Dental
+L002,J001,2026-03-02,4000 Sales,-1000.00,USD,Invoice Harbor Dental
+L003,J001,2026-03-02,2200 Sales tax payable,-80.00,USD,Invoice Harbor Dental
+L004,J002,2026-03-04,1010 Cash,1080.00,USD,Receipt Harbor Dental
+L005,J002,2026-03-04,1200 Receivables,-1080.00,USD,Receipt Harbor Dental
+L006,J003,2026-03-06,2000 Payables,2400.00,USD,Payment Lakeside Properties
+L007,J003,2026-03-06,1010 Cash,-2400.00,USD,Payment Lakeside Properties
+L008,J004,2026-03-10,1200 Receivables,540.00,USD,Invoice Juniper Bakery
+L009,J004,2026-03-10,4000 Sales,-500.00,USD,Invoice Juniper Bakery
+L010,J004,2026-03-10,2200 Sales tax payable,-40.00,USD,Invoice Juniper Bakery
+L011,J005,2026-03-12,1010 Cash,540.00,USD,Receipt Juniper Bakery
+L012,J005,2026-03-12,1200 Receivables,-540.00,USD,Receipt Juniper Bakery
+L013,J006,2026-03-15,2000 Payables,129.00,USD,Payment Orbit Software
+L014,J006,2026-03-15,1010 Cash,-129.00,USD,Payment Orbit Software
+L015,J007,2026-03-20,2000 Payables,129.00,USD,Payment Orbit Software
+L016,J007,2026-03-20,1010 Cash,-129.00,USD,Payment Orbit Software
+L017,J008,2026-03-20,1200 Receivables,2160.00,USD,Invoice Summit Fitness
+L018,J008,2026-03-20,4000 Sales,-2000.00,USD,Invoice Summit Fitness
+L019,J008,2026-03-20,2200 Sales tax payable,-160.00,USD,Invoice Summit Fitness
+L020,J009,2026-03-24,1010 Cash,2160.00,USD,Receipt Summit Fitness
+L021,J009,2026-03-24,1200 Receivables,-2160.00,USD,Receipt Summit Fitness
+L022,J010,2026-03-30,2000 Payables,310.00,USD,Payment Granite Utilities
+L023,J010,2026-03-30,1010 Cash,-310.00,USD,Payment Granite Utilities
